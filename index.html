@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -39,7 +40,7 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html"><span class="en it">Home</span><span class="fr">Accueil</span><span></span></a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="community.html">Community</a></li>
 							<li><a href="program.html">Program</a></li>
@@ -51,8 +52,21 @@
 						<div class="inner">
 							<header>
 								<h1>Digital Romanistics</h1>
-								<p>Travelling seminars on Romance Studies and Digital Humanities. In Switzerland, since 2020.</p>
+								<p class="en">Travelling seminars on Romance Studies and Digital Humanities. In Switzerland, since 2020.</p>	
+								<p class="fr">Séminaires itinérants sur la romanistique et les humanités numériques. En Suisse, depuis 2020.</p>
+								<p class="it">Seminari itineranti di Filologia Romanza e Informatica Umanistica. In Svizzera, dal 2020.</p>
 							</header>
+							<div class="languages">
+								<a title="English version" class="button primary small">
+									<span id="en" class="language">en</span>
+								</a>
+								<a title="Version française" class="button primary small">
+									<span id="fr" class="language">fr</span>
+								</a>
+								<a title="versione italiana"  class="button primary small">
+									<span id="it" class="language">it</span>
+								</a>
+							</div>
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
@@ -140,6 +154,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		    <script src="assets/js/language.js"></script>
 	</body>
 </html>
