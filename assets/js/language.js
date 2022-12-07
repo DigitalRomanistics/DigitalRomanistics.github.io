@@ -47,7 +47,6 @@ function language () {
 }
 
 
-
 function changeLang() {
     if (typeof this.id === 'undefined') {
         var id = readCookie('lg')
@@ -61,6 +60,17 @@ function changeLang() {
     var ensLength = ens.length;
     var its = document.getElementsByClassName('it');
     var itsLength = its.length;
+    var langCodes = document.querySelectorAll('.languages > a > span');
+    var langCodesLength = langCodes.length;
+    for (i = 0; i < langCodesLength; i++) {
+        if (langCodes[i].id == id) {
+            langCodes[i].style.backgroundColor = '#585858';
+            langCodes[i].style.color = 'white'
+        } else {
+            langCodes[i].style.backgroundColor = 'white';
+            langCodes[i].style.color = '#585858';
+        }
+    }
     switch (id) {
         case 'fr':
         for (var i = 0; i < ensLength; i++) {
