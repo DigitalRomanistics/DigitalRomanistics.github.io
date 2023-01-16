@@ -3182,7 +3182,8 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		border-top: 50px solid #f6f6f6;
+		/*background-color: #f6f6f6;*/
 	}
 
 		#footer > .inner {
