@@ -8,6 +8,13 @@
     }
 }
 
+#readMore1target {
+	display: none;
+}
+
+#readMore1source:focus + #readMore1target {
+	display: block;
+}
 
 
 /*
