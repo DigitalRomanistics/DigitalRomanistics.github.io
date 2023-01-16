@@ -1,6 +1,22 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+
+@media only screen and (max-width: 1075px) {
+    #hideWhenSmallScreen {
+        display: none;
+    }
+}
+
+#readMore1target {
+	display: none;
+}
+
+#readMore1source:focus + #readMore1target {
+	display: block;
+}
+
+
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -2855,8 +2871,8 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 2em;
-					height: 2em;
+					width: 6em;
+					height: 6em;
 				}
 
 		#header nav {
@@ -3166,7 +3182,8 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		border-top: 50px solid #f6f6f6;
+		/*background-color: #f6f6f6;*/
 	}
 
 		#footer > .inner {
