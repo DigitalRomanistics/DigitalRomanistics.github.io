@@ -9,3 +9,46 @@
     padding-left: 0.5em;
     font-weight: bold;
 }
+
+.wrapper {
+    overflow: hidden;
+    
+}
+
+.heading {
+    margin-bottom:0;
+}
+
+.heading:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: 3px;
+    border: 6px solid transparent;
+    border-left-color: #000;
+}
+
+.heading.active:before {
+    left: 0;
+    top: 3px;
+    border-color: #000 transparent transparent;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+.content {
+    transition: display .5s;
+    /*transform: translateY(-100%);*/
+    display: none;
+}
+
+.content.show {
+    /*transform: translateY(0);*/
+    display: inline-block;
+}
+
+.resources h1{
+   margin: 1em 0 0.5em 0;
+}
