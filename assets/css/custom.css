@@ -15,11 +15,11 @@
     
 }
 
-.title {
+.heading {
     margin-bottom:0;
 }
 
-.title:before {
+.heading:before {
     content: '';
     display: inline-block;
     position: relative;
@@ -28,13 +28,13 @@
     border-left-color: #000;
 }
 
-.title.active:before {
+.heading.active:before {
     left: 0;
     top: 3px;
     border-color: #000 transparent transparent;
 }
 
-.title:hover {
+.heading:hover {
     cursor: pointer;
 }
 
@@ -47,4 +47,8 @@
 .content.show {
     /*transform: translateY(0);*/
     display: inline-block;
+}
+
+.resources h1{
+   margin: 1em 0 0.5em 0;
 }
