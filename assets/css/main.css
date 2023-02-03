@@ -2705,7 +2705,7 @@ input, select, textarea {
 					margin: 0;
 				}
 
-				.tiles article > a .content {
+				.tiles article > a .contents {
 					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -2717,7 +2717,7 @@ input, select, textarea {
 					opacity: 0;
 				}
 
-					.tiles article > a .content > :last-child {
+					.tiles article > a .contents > :last-child {
 						margin-bottom: 0;
 					}
 
@@ -2761,7 +2761,7 @@ input, select, textarea {
 					opacity: 0;
 				}
 
-			body:not(.is-touch) .tiles article:hover .content {
+			body:not(.is-touch) .tiles article:hover .contents {
 				max-height: 15em;
 				opacity: 1;
 			}
@@ -2778,7 +2778,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body.is-touch .tiles article .content {
+		body.is-touch .tiles article .contents {
 			max-height: 15em;
 			opacity: 1;
 		}
